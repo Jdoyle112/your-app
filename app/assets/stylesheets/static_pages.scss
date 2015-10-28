@@ -1,3 +1,56 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+	
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+#wrap {
+	min-height: 100%;
+height: auto !important;
+height: 100%;
+margin: 0 auto -4em;
+}
+
+footer .content {
+	height: 4em;
+}
+
+
+h1 {
+	text-align: center;
+	font-family: 'Oswald', PT sans;
+
+}
+
+h2, p {
+	
+	text-align: center;
+	font-family: 'Pt Sans';
+}
+
+.center-pills {
+display: inline-block
+}
+
+ul {
+	margin-bottom: 50px !important;
+}
+
+footer {
+	background-color: black;
+}
+
+footer p {
+	color: white;
+}
+
+.foot {
+	padding: 40px 0;
+}
