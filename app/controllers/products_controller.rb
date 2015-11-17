@@ -5,7 +5,7 @@ class ProductsController < ApplicationController
   # GET /products.json
   def index
     @products = Product.all
-    render layout: "products"
+
   end
 
   # GET /products/1

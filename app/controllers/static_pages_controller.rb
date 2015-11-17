@@ -1,5 +1,7 @@
 class StaticPagesController < ApplicationController
   def index
+  	 @products = Product.all
+  	render layout: "products"
   end
 
 
