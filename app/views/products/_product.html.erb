@@ -2,7 +2,7 @@
       <div class="row col-xs-offset-1">
         <p class="col-xs-2"><%= product.name %></p>
         <p class="col-xs-2"><%= product.description %></p>
-        <p class="col-xs-2"><%= product.image_url %></p>
+        <p class="col-xs-2"><%= image_tag(product.image_url, :class => 'img-thumbnail') %></p>
         <p class="col-xs-2"><%= product.colour %></p>
         <p class="col-xs-2"><%= product.price %></p>
       </div>

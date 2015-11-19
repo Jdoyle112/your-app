@@ -11,6 +11,26 @@ html, body {
 	height: 100%;
 }
 
+
+.content {
+	height: 80vh;
+	background-image: url("bike_home.jpg");
+	background-size: cover;
+}
+
+.content h1 {
+	padding: 10% 0 2% 0;
+	margin-top: 0;
+	color: #336699;
+}
+
+.content h2 {
+	
+	color: white;
+}
+
+
+
 #wrap {
 	min-height: 100%;
 height: auto !important;
@@ -62,5 +82,5 @@ footer p {
 }
 
 .foot {
-	padding: 40px 0;
+	padding: 40px 0 0 0;
 }

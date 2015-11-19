@@ -9,22 +9,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= csrf_meta_tags %>
 </head>
+
 <body>
 <div id="wrap">
 
-<nav class="container">
+<nav class="container-fluid">
 	<div class="row text-center">
 	<ul class="nav nav-pills center-pills">
-		<li role="presentation" class="active"><a href="#">Home</a></li>
-		<li role="presentation"><a href="#">About</a></li>
-		<li role="presentation"><a href="#">Contact</a></li>
+		<li>
+          <%= link_to 'Home', root_path %>
+        </li>
+		<li>
+          <%= link_to 'About', static_pages_about_path %>
+        </li>
+		 <li><%= link_to "Products", products_path %></li>
+		  <li>
+          <%= link_to 'Contact', static_pages_contact_path %>
+        </li>
 	</ul>
 </div>
 </nav>
-<div class="content">	</div>
-<h1>Welcome to Jacks Bikes</h1>
-<h2>Your source for high end bikes in Buffalo, NY</h2>
-</div>
+
+<%= yield %>
 
 <footer class="container-fluid">	
 	<div class="row foot">
@@ -35,7 +41,7 @@
 
 </div>
 	</footer>
-<%= yield %>
+
 
 </body>
 </html>

@@ -11,8 +11,9 @@
 </p>
 
 <p>
-  <strong>Image url:</strong>
-  <%= @product.image_url %>
+   <a href="<%= @product.image_url %>" class="thumbnail" alt="Responsive image">
+      <%= image_tag(@product.image_url, class: "img-zoom", data_zoom_image: @product.image_url) %>
+    </a>
 </p>
 
 <p>
@@ -21,7 +22,7 @@
 </p>
 
 <p>
-  <strong>Color:</strong>
+  <strong>Price:</strong>
   <%= @product.price %>
 </p>
 
