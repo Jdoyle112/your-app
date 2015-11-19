@@ -26,6 +26,13 @@
 		  <li>
           <%= link_to 'Contact', static_pages_contact_path %>
         </li>
+        <li>
+          <%= form_tag("/products", method: "get", :class => "form_nav") do %>
+            <%= label_tag(:q, "Search for:") %>
+            <%= text_field_tag(:q) %>
+            <%= submit_tag("Search") %>
+          <% end %>
+        </li>
 	</ul>
 </div>
 </nav>
