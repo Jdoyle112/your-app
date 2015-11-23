@@ -29,3 +29,25 @@ nav a {
 	margin-top: 10px;
 	margin-left: 25px;
 }
+
+.border-form-div {
+	max-width: 300px;
+  padding: 19px 29px 29px;
+  margin: 10% auto;
+  background-color: #fff;
+  border: 1px solid #336699;
+  border-radius: 3px;
+}
+
+.border-form-div h2{
+	color: #336699;
+}
+
+.actions input {
+	padding: 5px 20px;
+	color: white;
+	background-color: #336699;
+	border-radius: 3px;
+}
+
+
