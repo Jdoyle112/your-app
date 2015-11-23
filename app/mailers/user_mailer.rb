@@ -7,3 +7,6 @@ def contact_form(email, name, message)
 	mail(:from => email,
 		:to => "jdoyle112@gmail.com",
 		:subject => "A new contact form message")
+
+end 
+end
