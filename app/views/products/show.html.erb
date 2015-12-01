@@ -1,31 +1,37 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
+<div class="container">
+  <div class="row products">
 
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
-
-<p>
-   <a href="<%= @product.image_url %>" class="thumbnail" alt="Responsive image">
+      <div class="col-xs-12 col-md-6 products_left">
+        <a href="<%= @product.image_url %>" class="thumbnail" alt="Responsive image">
       <%= image_tag(@product.image_url, class: "img-zoom", data_zoom_image: @product.image_url) %>
-    </a>
-</p>
+        </a>
+      </div>
+      
+      <div class="col-xs-12 col-md-6 products_right">
+        <p>
+          <strong>Name:</strong>
+          <%= @product.name %>
+        </p>
 
-<p>
-  <strong>Color:</strong>
-  <%= @product.colour %>
-</p>
+        <p>
+          <strong>Description:</strong>
+          <%= @product.description %>
+        </p>
 
-<p>
-  <strong>Price:</strong>
-  <%= @product.price %>
-</p>
+        <p>
+          <strong>Color:</strong>
+          <%= @product.colour %>
+        </p>
 
+        <p>
+          <strong>Price:</strong>
+          <%= @product.price %>
+        </p>
+      </div>
+  </div>
+</div>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
