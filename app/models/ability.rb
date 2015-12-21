@@ -6,6 +6,7 @@ class Ability
     can :manage, User, id: user.id
     
     if user.admin?
+        can :manage, :all
         can :destroy, Comment
     end
     # Define abilities for the passed in user here. For example:
