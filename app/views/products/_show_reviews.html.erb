@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+<div class="product-reviews">
+    <% @comments.each do |comment| %>
+        <div class="row">
+            <hr>
+            <p><%= comment.user.first_name %> <small><em><%= "#{time_ago_in_words(comment.created_at)} ago" %></em></small></p>
+            <div class="rated" data-score="<%= comment.rating %>"></div>
+            <p><%= comment.body %></p>
+            <% if signed_in? && current_user.admin? %>
+            	<span class="glyphicon glyphicon-trash"></span> 
+            	<%= link_to ('<span class="glyphicon glyphicon-remove"></span>').html_safe, product_comment_path(@product, comment), method: :delete, data: { confirm: 'Are you sure?' } %>
+            <% end %>
+        </div>
+    <% end %>
+    <%= will_paginate @comments %>
+</div>
